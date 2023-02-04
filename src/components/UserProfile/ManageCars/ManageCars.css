@@ -1,0 +1,75 @@
+.manage-container {
+	display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.manage-car{
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    width: 100%;
+    border: 1px solid #10264b;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.manage-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    align-items: start;
+    background-color: #f6f6f6;
+    padding: 12px;
+    border-radius: 12px 0 0px 12px;
+}
+
+.manage-info--rentalID{
+    font-weight: 600;
+}
+
+.manage-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 12px 24px;
+    border-radius: 0 12px 12px 0;
+}
+
+.manage-details--img{
+    max-width: 180px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+}
+
+.manage-details--info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    align-items: start;
+    padding: 12px;
+    border-radius: 12px 0 0px 12px;
+    flex-shrink: 0;
+}
+
+.btn-manage {
+    width: 100%
+}
+
+.confirm {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+}
+
+.confirm-text{
+    font-size: 12px;
+    align-self: center;
+    font-weight: 600;
+    color: #d24141;
+}
