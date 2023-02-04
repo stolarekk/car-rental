@@ -4,7 +4,7 @@ import "./Navbar.css";
 const Navbar = props => {
 	const navigate = useNavigate(); 
 	function goToLogin() {
-		navigate('/');
+		navigate('/login');
 	}
 	function goToRegister() {
 		navigate('/register');
@@ -17,7 +17,7 @@ const Navbar = props => {
 	}
 	function logout() {
 		props.logout()
-		navigate('/')
+		navigate('/login')
 	}
 	return (
 		<nav className='navbar'>

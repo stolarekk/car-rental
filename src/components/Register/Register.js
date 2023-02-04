@@ -27,7 +27,7 @@ function Register(props) {
 			}).then(function(response) {
 				if (response.status === 200) {
                     setErrorMessage('Rejestracja przebiegła pomyślnie!')
-                    setTimeout(() => navigate("/"), 1000)
+                    setTimeout(() => navigate("/login"), 1000)
 					
 				}
                 else {

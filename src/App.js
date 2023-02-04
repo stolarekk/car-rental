@@ -23,13 +23,13 @@ function App() {
 			<Router>
 				<Navbar user={user.id} logout={handleLogout} />
 				<Routes>
-					<Route path='/' element={<Login setUser={setUser} user={user} />} />
+					<Route path='/login' element={<Login setUser={setUser} user={user} />} />
 					<Route path='/register' element={<Register />} />
-					<Route path='/user/*' element={<ProtectedRoute user={user} redirectPath='/'><UserProfile user={user}/></ProtectedRoute>} />
+					<Route path='/user/*' element={<ProtectedRoute user={user} redirectPath='/login'><UserProfile user={user}/></ProtectedRoute>} />
 					<Route
 						path='/cars'
 						element={
-							<ProtectedRoute user={user} redirectPath='/'>
+							<ProtectedRoute user={user} redirectPath='/login'>
 								<CarList user={user} />
 							</ProtectedRoute>
 						}
