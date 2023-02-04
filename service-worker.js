@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/car-rental/precache-manifest.5cdde4761f1d3f908c9cc066fbd63d84.js"
+  "/car-rental/precache-manifest.9659822574e8a487f9f17df87da01a4a.js"
 );
 
 workbox.clientsClaim();
